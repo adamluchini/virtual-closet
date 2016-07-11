@@ -1,0 +1,12 @@
+<h1>Virtual Closet Simulator</h1>
+<h2>Found tshirt:</h2>
+
+@if (@Model.GetId() != 0)
+{
+<p>Tshirt color: @Model.GetColor()</p>
+<p>Tshirt Id: @Model.GetId()</p>
+}
+else
+{
+<p>No t-shirt with given ID found.</p>
+}

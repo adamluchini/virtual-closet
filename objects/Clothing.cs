@@ -123,7 +123,7 @@ namespace Closet.Objects
       cmd.ExecuteNonQuery();
     }
 
-    public static Tshirt Find(int id)
+    public static Tshirt Find(int idFind)
     {
       SqlConnection conn = DB.Connection();
       SqlDataReader rdr = null;
@@ -132,7 +132,7 @@ namespace Closet.Objects
       SqlCommand cmd = new SqlCommand("SELECT id, color FROM tshirts WHERE id = @TshirtId;", conn);
       SqlParameter tshirtIdParameter = new SqlParameter();
       tshirtIdParameter.ParameterName = "@TshirtId";
-      tshirtIdParameter.Value = id.ToString();
+      tshirtIdParameter.Value = idFind.ToString();
       cmd.Parameters.Add(tshirtIdParameter);
       rdr = cmd.ExecuteReader();
 

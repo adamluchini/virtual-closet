@@ -1,3 +1,13 @@
-<h1>Tshirt in your closet:</h1>
+<h1>Virtual Closet Simulator</h1>
+<h2>Tshirts in your closet:</h2>
 
-<p>@Model</p>
+<ul>
+
+@foreach (var tshirt in @Model){
+  <li>@tshirt.GetColor() (id: @tshirt.GetId())</li>
+}
+</ul>
+
+<a href="/">Add more</a>
+<a href="/clear">Clear out closet</a>
+<a href="/find">Find a tshirt</a>
