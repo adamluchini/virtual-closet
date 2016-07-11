@@ -4,7 +4,7 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Closet
+namespace Closet.Objects
 {
   public class TshirtTest : IDisposable
   {

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System;
 
-namespace Closet
+namespace Closet.Objects
 {
   public class Tshirt
   {
